@@ -1,0 +1,65 @@
+# This file defines all dimensions and parameters
+# values for your problem :
+
+# Initial and final time :
+time.free string none
+time.initial double 0
+time.final double 1
+
+# Dimensions :
+state.dimension integer 4
+control.dimension integer 3
+algebraic.dimension integer 0
+parameter.dimension integer 0
+constant.dimension integer 6
+boundarycond.dimension integer 7
+constraint.dimension integer 0
+
+# Discretization :
+discretization.steps integer 100
+discretization.method string lobatto
+
+# Optimization :
+optimization.type string single
+batch.type integer 0
+batch.index integer 0
+batch.nrange integer 1
+batch.lowerbound double 0
+batch.upperbound double 0
+batch.directory string none
+
+# Initialization :
+initialization.type string from_init_file
+initialization.file string none
+
+# Parameter identification :
+paramid.type string false
+paramid.separator string ,
+paramid.file string no_directory
+paramid.dimension integer 0
+
+# Names :
+state.0 string p
+state.1 string q
+state.2 string r
+state.3 string crit
+control.0 string u1
+control.1 string u2
+control.2 string u3
+boundarycond.0 string p(0)
+boundarycond.1 string q(0)
+boundarycond.2 string r(0)
+boundarycond.3 string crit(0)
+boundarycond.4 string p(T)
+boundarycond.5 string q(T)
+boundarycond.6 string r(T)
+constant.0 string lambda
+constant.1 string mu
+constant.2 string a1
+constant.3 string a2
+constant.4 string a3
+constant.5 string eps
+
+# Solution file :
+solution.file string problem.sol
+
