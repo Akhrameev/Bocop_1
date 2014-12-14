@@ -31,7 +31,13 @@
 {
 	// HERE : description of the function for the initial and final conditions
 	// Please give a function or a value for each element of boundaryconditions
-	boundary_conditions[0] =  ;
+	boundary_conditions[0] 	= initial_state[0];
+	boundary_conditions[1] 	= initial_state[1];
+	boundary_conditions[2] 	= initial_state[2];
+	boundary_conditions[3] 	= initial_state[3];
+	boundary_conditions[4] 	= final_state[0];
+	boundary_conditions[5] 	= final_state[1];
+	boundary_conditions[6] 	= final_state[2];
 }
 
 
