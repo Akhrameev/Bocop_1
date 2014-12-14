@@ -31,20 +31,20 @@
 {
 	// HERE : description of the function for the dynamics
 	// Please give a function or a value for the dynamics of each state variable
-	Tdouble p = state[0];
-	Tdouble q = state[1];
-	Tdouble r = state[2];
+	Tdouble p 	= state[0];
+	Tdouble q 	= state[1];
+	Tdouble r 	= state[2];
 	
-	Tdouble u1 = control[0];
-	Tdouble u2 = control[1];
-	Tdouble u3 = control[2];
+	Tdouble u1 	= control[0];
+	Tdouble u2 	= control[1];
+	Tdouble u3 	= control[2];
 	 	
-	double lambda 	= constant[0];
-  	double mu	= constant[1];
-	double a1	= constant[2];
-	double a2	= constant[3];
-	double a3	= constant[4];
-	double eps	= constant[5];
+	double lambda 	= constants[0];
+  	double mu	= constants[1];
+	double a1	= constants[2];
+	double a2	= constants[3];
+	double a3	= constants[4];
+	double eps	= constants[5];
 	
 
 	state_dynamics[0] = (mu - lambda)*q*r + a1*u1;
